@@ -22,6 +22,7 @@ gem "solid_cable"
 # Gemfile
 gem 'rack-cors', require: 'rack/cors'
 gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false

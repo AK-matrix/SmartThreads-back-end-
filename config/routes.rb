@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   resources :topics, only: [:index]
   resources :discussions, only: [:index]
   resources :posts, only: [:index]
+  post '/login', to: 'sessions#create' # Login endpoint
+  post '/users/login', to: 'users#login'
+  get '/protected_route', to: 'protected#index' # Protected endpoint
 end
